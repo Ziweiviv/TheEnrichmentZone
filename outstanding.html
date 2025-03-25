@@ -1,83 +1,283 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>The Enrichment Zone</title>
+  <title>Outstanding Impact | The Enrichment Zone</title>
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
     /* Custom styles */
     body {
-      background-color: #f8f9fa; /* Light background for page */
+      font-family: 'Arial', sans-serif;
+      background-color: #f1f1f1;
     }
+
     .navbar {
-      background-color: black;
+      background-color: #343a40;
     }
+
     .navbar a {
       color: white;
     }
-    .carousel-item img {
+
+    .navbar a:hover {
+      color: #007bff; /* Bootstrap's default blue color */
+    }
+
+    footer {
+      background-color: #343a40;
+      color: white;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    /* Program Overview Section */
+    .program-overview {
+      background-color: #ffffff;
+      padding: 50px 0;
+    }
+
+    .program-overview img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .program-overview .content {
+      padding-left: 30px;
+    }
+
+    .program-overview h2 {
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .program-overview p {
+      font-size: 18px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .card {
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
       width: 100%;
       height: auto;
       object-fit: cover;
+      border-radius: 10px 10px 0 0;
     }
-    .carousel-caption {
-      background-color: rgba(0, 0, 0, 0.5); /* Dark background for text */
+
+    .card-body {
+      padding: 20px;
     }
-    .container {
-      padding-top: 20px;
+
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
     }
-    footer {
-      background-color: black;
-      color: white;
-      padding: 15px;
+
+    .card-text {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .btn-primary {
+      background-color: #ffca28;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #e0a800;
+    }
+
+    .event-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .event-container .col-md-4 {
+      flex: 1 1 calc(33.33% - 20px);
+    }
+
+    /* Make it responsive */
+    @media (max-width: 768px) {
+      .event-container .col-md-4 {
+        flex: 1 1 calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 576px) {
+      .event-container .col-md-4 {
+        flex: 1 1 100%;
+      }
     }
 
   </style>
 </head>
+
 <body>
 
-<!-- Navbar Section -->
-<nav class="navbar navbar-expand-lg navbar-dark">
-  <div class="container">
-    <a class="navbar-brand" href="#">The Enrichment Zone</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="outstanding.html">Outstanding Impact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="mentorship.html">Peer Mentor</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="workshops.html">Unilife</a>
-        </li>
-      </ul>
+  <!-- Navbar Section -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">The Enrichment Zone</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="outstanding.html">Outstanding Impact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mentorship.html">Peer Mentor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="workshops.html">Unilife</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Program Overview Section -->
+  <section class="program-overview">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="out.jpg" alt="Outstanding Impact Overview">
+        </div>
+        <div class="col-md-6 content">
+          <h2>Outstanding Impact Program Overview</h2>
+          <p>
+            The Outstanding Impact program is designed to help you build the skills and experiences that will shape your future. As a UC scholar, this program supports your growth academically, personally, and professionally.
+          </p>
+          <p>
+            By participating in our events, you'll develop leadership skills, connect with industry experts, and gain hands-on experience—all while contributing to something bigger than yourself. This is your opportunity to refine the tools needed to make a lasting impact and succeed in your future career.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Main Content Section -->
+      <div class="col-md-12">
+        <h2 class="mt-4">2025 Term 2 Events</h2>
+        <div class="row mt-4">
+          <!-- Event 1 -->
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card">
+              <img src="soon.jpg" class="card-img-top" alt="Event 1">
+              <div class="card-body">
+                <h5 class="card-title">Leadership Night #4</h5>
+                <p class="card-text">Details coming soon—stay tuned!</p>
+                <p class="card-text"><strong>Date:</strong> 7th May 2025</p>
+                <p class="card-text"><strong>Time:</strong> 6:00 PM - 8:00 PM</p>
+                <p class="card-text"><strong>Location:</strong> The Living Room</p>
+                <a href="https://forms.office.com/yourformlink" target="_blank" class="btn btn-primary">Sign Up</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 2 -->
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card">
+              <img src="soon.jpg" class="card-img-top" alt="Event 2">
+              <div class="card-body">
+                <h5 class="card-title">Leadership Night #5</h5>
+                <p class="card-text">Details coming soon—stay tuned!</p>
+                <p class="card-text"><strong>Date:</strong> 19th May 2025</p>
+                <p class="card-text"><strong>Time:</strong> 6:00 PM - 8:00 PM</p>
+                <p class="card-text"><strong>Location:</strong> The Living Room</p>
+                <a href="https://forms.office.com/yourformlink" target="_blank" class="btn btn-primary">Sign Up</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 3 -->
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card">
+              <img src="event3.jpg" class="card-img-top" alt="Event 3">
+              <div class="card-body">
+                <h5 class="card-title">Success Coaching Workshop</h5>
+                <p class="card-text">Details coming soon—stay tuned!</p>
+                <p class="card-text"><strong>Date:</strong> multiple dates</p>
+                <p class="card-text"><strong>Time:</strong> multile times</p>
+                <p class="card-text"><strong>Location:</strong> Rehua</p>
+                <a href="https://forms.office.com/yourformlink" target="_blank" class="btn btn-primary">Sign Up</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card">
+              <img src="event3.jpg" class="card-img-top" alt="Event 3">
+              <div class="card-body">
+                <h5 class="card-title">Study Break Retreat </h5>
+                <p class="card-text">Details coming soon—stay tuned!</p>
+                <p class="card-text"><strong>Date:</strong> During Study Week</p>
+                <p class="card-text"><strong>Time:</strong> 1-2 pm </p>
+                <p class="card-text"><strong>Location:</strong> the living room </p>
+                <a href="https://forms.office.com/yourformlink" target="_blank" class="btn btn-primary">Sign Up</a>
+              </div>
+            </div>
+          </div>
+          <!-- Event 4 -->
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card">
+              <img src="event4.jpg" class="card-img-top" alt="Event 4">
+              <div class="card-body">
+                <h5 class="card-title">Career Mentoring</h5>
+                <p class="card-text">Get one-on-one guidance from mentors who will help you navigate your career path.</p>
+                <a href="https://forms.office.com/yourformlink" target="_blank" class="btn btn-primary">Sign Up</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="mt-5">Gallery</h3>
+    <div class="row">
+      <!-- Gallery Images -->
+      <div class="col-md-4 col-sm-6">
+        <img src="n.jpg" class="img-fluid" alt="Gallery 1">
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <img src="n.jpg" class="img-fluid" alt="Gallery 2">
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <img src="n.jpg" class="img-fluid" alt="Gallery 3">
+      </div>
     </div>
   </div>
-</nav>
 
-<!-- Main Content -->
-<div class="container">
-
-
-  <!-- Footer -->
-  <footer class="bg-dark text-center py-3">
-    <p>&copy; 2025 The Enrichment Zone | UC Enrichment Programmes </p>
+  <!-- Footer Section -->
+  <footer>
+    <div class="container text-center">
+      <p>&copy; 2025 The Enrichment Zone | University of Canterbury</p>
+      <p>All rights reserved.</p>
+    </div>
   </footer>
-</div>
 
-<!-- Bootstrap JS, Popper.js, and jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
+
 </html>
