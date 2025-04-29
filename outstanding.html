@@ -198,8 +198,18 @@
       </div>
     </div>
   </section>
-
-  <div id="events" class="container-fluid">
+  <div id="loginSection" class="container mt-5">
+    <div class="card p-4">
+      <h5 class="mb-3">Welcome! 🚀</h5>
+      <p>Access exclusive resources and updates by entering the passcode or student ID below:</p>
+      <input type="password" id="passcodeInput" class="form-control mb-3" placeholder="Enter Passcode or Student ID" autofocus>
+      <button onclick="checkPasscode()" class="btn btn-primary w-100">Access Content</button>
+      <div id="loginError" class="text-danger mt-2 d-none">Oops! That’s not quite right. Please try again. 😊</div>
+    </div>
+  </div>
+  
+  
+  <div id="events" class="container-fluid d-none">
     <div class="row">
    
       <!-- Main Content Section -->
@@ -562,5 +572,19 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
+<script>
+  const validPasscodes = ['666', '51575650', '17752147', '54670871', '73045505', '68340048', '95043773', '56783904', '95277816', '55605271', '24848546', '97363499', '35164145', '65921549', '85541657', '49030817', '27223854', '84761810', '61338390', '15822399', '65609652', '14246187', '66612450', '74403986', '51266096', '41489554', '46132474', '42934577', '48570092', '56753219', '48249766', '24290276', '18310852', '16349548', '22199925', '47389483', '64366172', '27551954', '96574644', '53999754', '16225506', '63061468', '76175802', '89361748', '86335460', '61653836', '44622280', '38076159', '82908560', '27111653', '11177664', '96922877', '66920217', '69759074', '49603716', '23589059', '45403166', '88795853', '34699644', '23215521', '37349655', '61424248', '65814677', '23596528', '81479510', '32424738', '23464353']; 
 
+  function checkPasscode() {
+    const input = document.getElementById('passcodeInput').value.trim();
+    const error = document.getElementById('loginError');
+
+    if (validPasscodes.includes(input)) {
+      document.getElementById('loginSection').classList.add('d-none');
+      document.getElementById('events').classList.remove('d-none');
+    } else {
+      error.classList.remove('d-none');
+    }
+  }
+</script>
 </html>
