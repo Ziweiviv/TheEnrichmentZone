@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    padding-top: 20px;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #343a40;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .navbar a {
+    color: white;
+  }
+  
+  .navbar a:hover {
+    color: #007bff;
+  }
+  
+  /* Carousel Styles */
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark background for text */
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;  /* Ensure margin is consistent */
+  }
+  
+  /* Program Overview Styles */
+  .program-overview {
+    background-color: #ffffff;
+    padding: 50px 0;
+  }
+  
+  .program-overview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .program-overview .content {
+    padding-left: 30px;
+  }
+  
+  .program-overview h2 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .program-overview p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Card Styles */
+  .card {
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .btn-primary {
+    background-color: #ffca28;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #e0a800;
+  }
+  
+  /* Event Container Styles */
+  .event-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .event-container .col-md-4 {
+    flex: 1 1 calc(33.33% - 20px);
+  }
+  
+  @media (max-width: 768px) {
+    .event-container .col-md-4 {
+      flex: 1 1 calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .event-container .col-md-4 {
+      flex: 1 1 100%;
+    }
+  }
+  
