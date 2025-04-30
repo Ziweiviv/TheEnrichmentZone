@@ -45,6 +45,8 @@
       z-index: 1000;
       background-color: #343a40;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding-top: 0;
+      padding-bottom: 0;
     }
 
     .navbar a {
@@ -131,11 +133,21 @@
       flex-wrap: wrap;
       gap: 20px;
     }
-
+    .container {
+      padding-top: 20px;
+    }
     .event-container .col-md-4 {
       flex: 1 1 calc(33.33% - 20px);
     }
 
+    footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;  /* Ensure margin is consistent */
+}
     @media (max-width: 768px) {
       .event-container .col-md-4 {
         flex: 1 1 calc(50% - 20px);
@@ -151,7 +163,7 @@
 </head>
 
 
-<body >
+<body>
 
   <!-- Navbar Section -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
@@ -161,7 +173,6 @@
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-  
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
@@ -560,16 +571,15 @@
 
 </div> 
 
-
+  </div>
   <!-- Footer Section -->
    <div  class="container-fluid">
-  <footer >
-    <div class="container text-center"><p>Developed by Vivian Wang | The Enrichment Zone | University of Canterbury</p>
-      <p>&copy; 2025 University of Canterbury. All rights reserved.</p>
-   
-  </footer>
+    <footer class="bg-dark text-center py-3">
+      <p>&copy; 2025 The Enrichment Zone | UC Enrichment Programmes. All rights reserved.</p>
+      <p>Developed by Vivian Wang.</p>
+    </footer>
       </div> 
-  </div>
+
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>

@@ -9,13 +9,28 @@
   <style>
     /* Custom styles */
     body {
-      background-color: #f8f9fa; /* Light background for page */
+      font-family: 'Arial', sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 0;
     }
     .navbar {
-      background-color: black;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: #343a40;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding-top: 0;
+      padding-bottom: 0;
     }
+
     .navbar a {
       color: white;
+    }
+
+    .navbar a:hover {
+      color: #007bff;
     }
     .carousel-item img {
       width: 100%;
@@ -29,20 +44,25 @@
       padding-top: 20px;
     }
     footer {
-      background-color: black;
-      color: white;
-      padding: 15px;
-    }
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;  /* Ensure margin is consistent */
+}
+
 
   </style>
 </head>
 <body>
 
 <!-- Navbar Section -->
-<nav class="navbar navbar-expand-lg navbar-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
   <div class="container">
-    <a class="navbar-brand" href="#">The Enrichment Zone</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="index.html">The Enrichment Zone</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -181,11 +201,13 @@
       
        
       </div>
-    </div>
+    </div>  </div>  </div>
   
     <!-- Footer -->
+    <div  class="container-fluid">
     <footer class="bg-dark text-center py-3">
-      <p>&copy; 2025 The Enrichment Zone | UC Enrichment Programmes</p>
+      <p>&copy; 2025 The Enrichment Zone | UC Enrichment Programmes. All rights reserved.</p>
+      <p>Developed by Vivian Wang.</p>
     </footer>
   </div>
   
